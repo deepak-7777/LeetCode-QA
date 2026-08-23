@@ -17,7 +17,7 @@ This helps me:
 
 So far, I have solved a large number of problems from the following topics:
 
-Arrays
+* Arrays
 Strings
 Linked List
 Stack

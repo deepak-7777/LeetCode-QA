@@ -17,12 +17,24 @@ This helps me:
 
 So far, I have solved a large number of problems from the following topics:
 
-* Arrays
-* Strings
-* Matrices
-* Binary Search
-* Mathematics
-* MySQL
+Arrays
+Strings
+Linked List
+Stack
+Queue
+Hashing
+Recursion
+Sorting
+Searching
+Trees
+Binary Search Tree
+Heap
+Graphs
+Greedy
+Dynamic Programming
+Backtracking
+Bit Manipulation
+And more...
 
 I continue to explore new concepts and improve my problem-solving skills every day.
 

@@ -1,8 +1,17 @@
 class Solution {
     public boolean isPowerOfTwo(int n) {
-        if (n <= 0) {                    // base case 
-        return false;
+        if (n <= 0) {
+            return false;
         }
-    return (n & (n - 1)) == 0;   // & (And operator) dono number ke binary ko compare karta hai 
+
+        if (n == 1) {
+            return true;
+        }
+
+        if (n % 2 != 0) {
+            return false;
+        }
+
+        return isPowerOfTwo(n / 2);
     }
 }

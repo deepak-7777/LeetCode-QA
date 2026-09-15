@@ -5,11 +5,11 @@ class Solution {
         int count = 0;
 
         while (left < n) {
-            if(nums[left] > nums[(left +1) % n]){
+            if(nums[left] > nums[(left +1) % n]){  // % n isliye use kiya hai taaki last element ke baad  first element par aa sake (circular check)
                 count++;
             }
-            left++;
+            left++; 
         }
-        return count <= 1;
+        return count <= 1;   /// break agar 1 se jyada hua to possible nahi hai 
     }
 }

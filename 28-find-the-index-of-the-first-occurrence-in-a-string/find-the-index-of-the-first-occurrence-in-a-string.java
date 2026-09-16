@@ -3,11 +3,11 @@ class Solution {
       int n = haystack.length();
       int m = needle.length();
 
-      for (int i = 0; i <= n - m; i++) {
+      for (int i = 0; i <= n - m; i++) {  // last valid starting position
         int j;
-        for (j = 0; j < m; j++) {
+        for (j = 0; j < m; j++) {   // compare needle chars
             if(haystack.charAt(i + j) != needle.charAt(j)) {
-                break;
+                break;    // mismatch found
             }
         }
         if (j == m) {

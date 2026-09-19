@@ -12,7 +12,7 @@ class Solution {
         char ch1 = s.charAt(i);
         char ch2 = t.charAt(i);
 
-        if (map1.containsKey(ch1)) {      // Agar ch1 pehle se mapped hai
+        if (map1.containsKey(ch1) == true) {      // Agar ch1 pehle se mapped hai
             if (map1.get(ch1) != ch2) {    // Mapping mismatch
                 return false;
             }

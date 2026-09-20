@@ -3,13 +3,13 @@ class Solution {
         int n = words.length;
 
         for (int i = 0; i < n; i++) {
-            int left = 0;
-            int right = words[i].length() - 1;
+            int left = 0;                        // start pointer
+            int right = words[i].length() - 1;   // end pointer
 
             boolean palindrome = true;
 
             while (left < right) {
-                if (words[i].charAt(left) != words[i].charAt(right)) {
+                if (words[i].charAt(left) != words[i].charAt(right)) {   // chars mismatch
                     palindrome = false;
                     break;
                 }
@@ -18,7 +18,7 @@ class Solution {
                 right--;
             }
 
-            if (palindrome) {
+            if (palindrome) {      // first palindrome found
                 return words[i];
             }
         }

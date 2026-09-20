@@ -12,21 +12,21 @@ class Solution {
 
             if (matrix[i][j] == 0) {
 
-                if (i == 0) {      // agar fr pe 0 ho to 
-                    fr = true;     // pure row ko 0
+                if (i == 0) {      // Agar original matrix ki first row me koi 0 milta hai to 
+                    fr = true;     // fr = true
                 }
 
-                if (j == 0) {     // agar fc pe 0 ho to 
-                    fc = true;    // pure col ko 0 
+                if (j == 0) {     // // Agar original matrix ki first column me koi 0 milta hai to 
+                    fc = true;    // fc = true
                 }
 
-                matrix[0][j] = 0;  // agar col mai kahi bhi 0 ho to first point ko 0 (trace)
-                matrix[i][0] = 0;  // agar row mai kahi bhi 0 ho to first point ko 0 (trace)
+                matrix[0][j] = 0;  // agar col mai kahi bhi 0 ho to first point ko 0 (mark kar do)
+                matrix[i][0] = 0;  // agar row mai kahi bhi 0 ho to first point ko 0 (mark kar do)
             }
         }
     }
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < n; i++) {   // Hum index 1 se start karte hain taaki markers safe rahen
         for (int j = 1; j < m; j++) {
 
             if (matrix[i][0] == 0 || matrix[0][j] == 0) {

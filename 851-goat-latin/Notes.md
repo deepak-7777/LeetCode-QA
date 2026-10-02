@@ -1,0 +1,1 @@
+<h2>goat-latin Notes</h2><hr>[ Time taken: 1hr 2m 28s ]

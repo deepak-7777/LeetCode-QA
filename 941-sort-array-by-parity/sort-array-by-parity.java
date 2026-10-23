@@ -14,7 +14,7 @@ class Solution {
                 left++;
             }
 
-            if(nums[right] % 2 == 1) {  // odd
+            if(nums[right] % 2 != 0) {  // odd
                 right--;
             }
         }
